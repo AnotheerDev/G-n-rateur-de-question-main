@@ -4,6 +4,7 @@
 <head>
     <title>Générateur de Questions Aléatoires</title>
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <script type="text/javascript">
         var reponseActuelle = "";
         function genererQuestion() {
@@ -158,7 +159,7 @@
                 },
                 {
                     question:"<strong>Question Générale</strong><br><br>Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles",
-                    reponse: "<strong>Il existe 3 structures de contrôles en algorithmie : la structure conditionnelle, la structure itérative et la structure séquentielle.</strong>",
+                    reponse: "<strong>Il existe 3 structures de contrôles en algorithmie : la structure conditionnelle ex if , la structure itérative ex boucle foreach et la structure séquentielle.</strong>",
                 },
                 {
                     question:"<strong>Question Générale</strong><br><br>Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?",
@@ -190,7 +191,7 @@
                 },
                 {
                     question:"<strong>Question Générale</strong><br><br>Qu’est-ce qu’un CMS ? Citer au moins 2 exemples",
-                    reponse: "<strong>Un CMS est un logiciel permettant de créer et gérer un site web. Il existe plusieurs CMS : WordPress, Drupal, Joomla, Prestashop, Magento, etc.</strong>",
+                    reponse: "<strong>Content Management System est un logiciel permettant de créer et gérer un site web. Il existe plusieurs CMS : WordPress, Drupal, Joomla, Prestashop, Magento, etc.</strong>",
                 },
                 {
                     question:"<strong>Question Front End</strong><br><br>Définir HTML",
@@ -294,7 +295,7 @@
                 },
                 {
                     question:"<strong>Question POO</strong><br><br>Donner une définition de la programmation orientée objet",
-                    reponse: "<strong>La programmation orientée objet est un paradigme de programmation permettant de structurer un programme en utilisant des objets et des classes.</strong>",
+                    reponse: "<strong>La programmation orientée objet est un modèle de programmation ( paradigme ) qui s'articule autour d'objets et de données, plutôt que d'actions et de logique.</strong>",
                 },
                 {
                     question:"<strong>Question POO</strong><br><br>Qu’est-ce qu’une classe ? Comment la déclare-t-on ?",
@@ -314,7 +315,7 @@
                 },
                 {
                     question:"<strong>Question POO</strong><br><br>Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?",
-                    reponse: "<strong>La méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe est le constructeur.</strong>",
+                    reponse: "<strong>objet = new ClassObjet</strong>",
                 },
                 {
                     question:"<strong>Question POO</strong><br><br>Qu’est-ce que l’encapsulation ?",
@@ -338,7 +339,7 @@
                 },
                 {
                     question:"<strong>Question POO</strong><br><br>Définir une méthode / classe abstraite ?",
-                    reponse: "<strong>Une méthode / classe abstraite est une méthode / classe qui ne peut pas être instanciée.</strong>",
+                    reponse: "<strong>En programmation, une méthode abstraite est une méthode qui est déclarée, mais ne possède pas d'implémentation dans la classe qui la déclare. Une classe abstraite, en revanche, est une classe qui ne peut pas être instanciée directement et est souvent utilisée comme une classe de base pour d'autres classes. Les classes abstraites sont utilisées pour définir des interfaces avec des méthodes abstraites qui doivent être implémentées par les sous-classes.</strong>",
                 },
                 {
                     question:"<strong>Question POO</strong><br><br>Définir le chaînage de méthodes",
@@ -414,31 +415,27 @@
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants :  qu’un modèle logique de données (MLD) en Merise ?   ",
-                    reponse: "<strong>Donner la définition des mots suivants :  qu’un modèle logique de données (MLD) en Merise ?   </strong>",
+                    reponse: "<strong>Le Modèle Logique de Données est une représentation technique de la structure de la base de données, qui découle du Modèle Conceptuel de Données (MCD). Le MLD organise les données en tables, définit les relations entre ces tables, et spécifie les clés primaires et étrangères. Il fait le lien entre le modèle conceptuel et le modèle physique, et s'adapte à un type spécifique de système de gestion de base de données (SGBD).</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’un modèle conceptuel de données (MCD) en Merise ?",
-                    reponse: "<strong>Donner la définition des mots suivants : qu’un modèle conceptuel de données (MCD) en Merise ?</strong>",
+                    reponse: "<strong>Le Modèle Conceptuel de Données est une représentation schématique des informations que l'on souhaite stocker dans une base de données, sans tenir compte des contraintes techniques. Il identifie les entités importantes, leurs attributs, et les relations entre ces entités. Le MCD se concentre sur ce qui doit être stocké, plutôt que sur la manière de le stocker.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une Relation en Merise ? ",
-                    reponse: "<strong>Donner la définition des mots suivants : qu’une Relation en Merise ? </strong>",
+                    reponse: "<strong>Dans le contexte de Merise, une relation désigne un lien logique entre deux entités ou plus. Elle est souvent représentée dans le MCD et détermine comment les données d'une entité sont associées à celles d'une autre. La relation peut aussi définir la cardinalité, c'est-à-dire le nombre d'instances d'une entité qui peuvent être associées à une instance d'une autre entité.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une Entité  en Merise ? ",
-                    reponse: "<strong>Donner la définition des mots suivants : qu’une Entité  en Merise ? </strong>",
+                    reponse: "<strong>Une entité est un objet ou un concept qui doit être stocké dans la base de données. Chaque entité a des attributs qui décrivent ses caractéristiques. Par exemple, dans une base de données scolaire, une entité pourrait être 'Étudiant' avec des attributs comme le nom, le prénom, et le numéro d'étudiant.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une clé étrangère en merise",
-                    reponse: "<strong>Donner la définition des mots suivants : qu’une clé étrangère en merise</strong>",
+                    reponse: "<strong>Une clé étrangère est un attribut dans une table qui fait référence à la clé primaire d'une autre table. Elle est utilisée pour établir et maintenir des relations entre les tables. La clé étrangère permet d'assurer l'intégrité référentielle dans la base de données.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une Cardinalité en merise ",
-                    reponse: "<strong>Donner la définition des mots suivants : qu’une Cardinalité en merise </strong>",
-                },
-                {
-                    question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une clé étrangère en merise",
-                    reponse: "<strong>Donner la définition des mots suivants : qu’une clé étrangère en merise</strong>",
+                    reponse: "<strong>La cardinalité dans Merise définit la nature et le degré de relation entre les entités. Elle spécifie combien d'instances d'une entité peuvent être liées à combien d'instances d'une autre entité. La cardinalité peut être de types différents comme 1:1, 1:N, N:1, ou N:M, reflétant différentes manières dont les entités peuvent être associées.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Que devient une relation de type « Many To Many » dans le modèle logique de données ?",
@@ -450,15 +447,15 @@
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Définir les notions suivantes : a. SQL b. MySQL c. SGBD (donner 2 exemples de SGBD)",
-                    reponse: "<strong>Définir les notions suivantes : a. SQL b. MySQL c. SGBD (donner 2 exemples de SGBD)</strong>",
+                    reponse: "<strong>SQL : Langage de programmation utilisé pour la gestion et la manipulation de données dans les bases de données relationnelles.></strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Définir les notions suivantes :  b. MySQL (donner 2 exemples de SGBD)",
-                    reponse: "<strong>Définir les notions suivantes :  b. MySQL (donner 2 exemples de SGBD)</strong>",
+                    reponse: "<strong>MySQL : Système de gestion de base de données relationnelle open source, utilisé pour des applications web et des sites internet.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Définir les notions suivantes :  c. SGBD (donner 2 exemples de SGBD)",
-                    reponse: "<strong>Définir les notions suivantes :  c. SGBD (donner 2 exemples de SGBD)</strong>",
+                    reponse: "<strong>SGBD (Système de Gestion de Base de Données) : Logiciel permettant de stocker, manipuler et récupérer des données de manière structurée. Exemples : Oracle Database, PostgreSQL.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___",
@@ -490,39 +487,39 @@
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Insérer un nouvel enregistrement dans une table ",
-                    reponse: "<strong>Quelles sont les clauses qui permettent de Insérer un nouvel enregistrement dans une table </strong>",
+                    reponse: "<strong>Utilisez la clause INSERT INTO. Exemple : INSERT INTO nom_table (colonne1, colonne2) VALUES (valeur1, valeur2).</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Modifier un enregistrement dans une table ",
-                    reponse: "<strong>Quelles sont les clauses qui permettent de Modifier un enregistrement dans une table </strong>",
+                    reponse: "<strong>Utilisez la clause UPDATE. Exemple : UPDATE nom_table SET colonne1 = valeur1 WHERE condition.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Supprimer un enregistrement dans une table ",
-                    reponse: "<strong>Quelles sont les clauses qui permettent de Supprimer un enregistrement dans une table </strong>",
+                    reponse: "<strong>Utilisez la clause DELETE FROM. Exemple : DELETE FROM nom_table WHERE condition.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Supprimer la base de données",
-                    reponse: "<strong>Quelles sont les clauses qui permettent de Supprimer la base de données</strong>",
+                    reponse: "<strong>Utilisez la commande DROP DATABASE. Exemple : DROP DATABASE nom_base_de_donnees.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Filtrer les résultats d’une requête SQL ",
-                    reponse: "<strong>Quelles sont les clauses qui permettent de Filtrer les résultats d’une requête SQL </strong>",
+                    reponse: "<strong>Utilisez la clause WHERE. Exemple : SELECT * FROM nom_table WHERE condition.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Trier les résultats d’une requête SELECT",
-                    reponse: "<strong>Quelles sont les clauses qui permettent de Trier les résultats d’une requête SELECT</strong>",
+                    reponse: "<strong>Utilisez la clause ORDER BY. Exemple : SELECT * FROM nom_table ORDER BY colonne.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique",
-                    reponse: "<strong>Quelles sont les clauses qui permettent de Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique</strong>",
+                    reponse: "<strong>Utilisez la clause GROUP BY. Exemple : SELECT colonne, COUNT(*) FROM nom_table GROUP BY colonne.</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Concaténer 2 chaînes de caractères",
-                    reponse: "<strong>Quelles sont les clauses qui permettent de Concaténer 2 chaînes de caractères</strong>",
+                    reponse: "<strong>Utilisez la fonction CONCAT(). Exemple : CONCAT(chaine1, chaine2).</strong>",
                 },
                 {
                     question:"<strong>Question Modelisation & BDD</strong><br><br>Comment,se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?",
-                    reponse: "<strong>Comment,se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?</strong>",
+                    reponse: "<strong>Utilisez la classe native PDO (PHP Data Objects). Exemple de connexion : $pdo = new PDO('mysql:host=hostname;dbname=nom_base', 'username', 'password').</strong>",
                 },
                 {
                     question:"<strong>Question Symfony</strong><br><br>Qu’est-ce que Symfony ?",
@@ -534,7 +531,7 @@
                 },
                 {
                     question:"<strong>Question Symfony</strong><br><br>Quelle est la dernière version en date de Symfony ?",
-                    reponse: "<strong>La dernière version en date de Symfony est la version 5.2.</strong>",
+                    reponse: "<strong>La dernière version en date de Symfony est la version 6.3.</strong>",
                 },
                 {
                     question:"<strong>Question Symfony</strong><br><br>Qu’est-ce qu’un bundle ?",
@@ -594,7 +591,7 @@
                 },
                 {
                     question:"<strong>Question Sécurité</strong><br><br>Qu’est-ce qu’une politique de mots de passe forts ?",
-                    reponse: "<strong>Une politique de mots de passe forts est une politique permettant de définir des règles pour les mots de passe.</strong>",
+                    reponse: "<strong>Une politique de mots de passe forts est une politique permettant de définir des règles pour les mots de passe 12 caractères, majuscule, chiffre et caractère spécial.</strong>",
                 },
                 {
                     question:"<strong>Question Sécurité</strong><br><br>Qu’est-ce que l’hameçonnage ?",
