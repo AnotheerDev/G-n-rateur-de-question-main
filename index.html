@@ -5,6 +5,7 @@
     <title>Générateur de Questions Aléatoires</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
+        var reponseActuelle = "";
         function genererQuestion() {
             var questionsEtReponses = [
                 {
@@ -762,7 +763,13 @@
             ];
             var qR = questionsEtReponses[Math.floor(Math.random() * questionsEtReponses.length)];
             document.getElementById("question").innerHTML = qR.question;
-            document.getElementById("reponse").innerHTML = qR.reponse;
+            reponseActuelle = qR.reponse;
+            document.getElementById("reponse").style.display = "none";
+            document.querySelector('.btnShowAnswer').style.display = "block";
+        }
+
+        function afficherReponse() {
+            document.getElementById("reponse").innerHTML = reponseActuelle;
             document.getElementById("reponse").style.display = "block"; 
         }
     </script>
@@ -772,6 +779,7 @@
     <div class="container">
         <button class="btnGenerator" onclick="genererQuestion()">Générer une Question</button>
         <p class="question" id="question"></p>
+        <button class="btnShowAnswer" onclick="afficherReponse()" style="display:none;">Afficher la Réponse</button> 
         <p class="reponse" id="reponse" style="display:none;"></p>
     </div>
 </body>
