@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Générateur de Questions Aléatoires</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function genererQuestion() {
+            var questionsEtReponses = [
+                {
+                    question: "<strong>Definisser Acronyme</strong> API",
+                    reponse: "API signifie Application Programming Interface.",
+                },
+                {
+                    question: "<strong>Definisser Acronyme</strong> ORM ",
+                    reponse: "<strong>signifie Object Relational Mapping.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> CNIL ",
+                    reponse: "<strong>signifie Commission Nationale de l'Informatique et des Libertés.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> RGPD ",
+                    reponse: "<strong>signifie Règlement Général sur la Protection des Données.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> MVC ",
+                    reponse: "<strong>signifie Modèle-Vue-Contrôleur.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> PHP ",
+                    reponse: "<strong>signifie Hypertext Preprocessor.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> HTML ",
+                    reponse: "<strong>signifie HyperText Markup Language.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> POO ",
+                    reponse: "<strong>signifie Programmation Orientée Objet.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> PDO ",
+                    reponse: "<strong>signifie PHP Data Objects.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> CSS ",
+                    reponse: "<strong>signifie Cascading Style Sheets.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> CMS ",
+                    reponse: "<strong>signifie Content Management System.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> JSON ",
+                    reponse: "<strong>signifie JavaScript Object Notation.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> HTTP ",
+                    reponse: "<strong>signifie HyperText Transfer Protocol.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> AJAX ",
+                    reponse: "<strong>signifie Asynchronous JavaScript And XML.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> XSS ",
+                    reponse: "<strong>signifie Cross-Site Scripting.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> ORM ",
+                    reponse: "<strong>signifie Object Relational Mapping.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> SQL ",
+                    reponse: "<strong>signifie Structured Query Language.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> SGBD ",
+                    reponse: "<strong>signifie Système de Gestion de Base de Données.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> CSRF",
+                    reponse: "<strong>signifie Cross-Site Request Forgery.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> SEO",
+                    reponse: "<strong>signifie Search Engine Optimization.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> MVP(design pattern)",
+                    reponse: "<strong>signifie Modèle-Vue-Présentation.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> MVP(stratégie)",
+                    reponse: "<strong>signifie Minimum Viable Product.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong>MCD",
+                    reponse: "<strong>signifie Modèle Conceptuel de Données.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong> MLD",
+                    reponse: "<strong>signifie Modèle Logique de Données.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong>MoSCoW",
+                    reponse: "<strong>signifie Must have, Should have, Could have, Won't have.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong>CRUD",
+                    reponse: "<strong>signifie Create, Read, Update, Delete.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong>URL",
+                    reponse: "<strong>signifie Uniform Resource Locator.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong>HTTP",
+                    reponse: "<strong>signifie HyperText Transfer Protocol.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong>XML",
+                    reponse: "<strong>signifie Extensible Markup Language.</strong>",
+                },
+                {
+                    question:"<strong>Definisser Acronyme</strong>JSON",
+                    reponse: "<strong>signifie JavaScript Object Notation.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Quel est l’environnement à installer pour exécuter un script PHP ? Citer 2 exemples de logiciels permettant ce contexte",
+                    reponse: "<strong>Il faut installer un serveur web (Apache, Nginx, IIS) et PHP. Il est possible d’installer un logiciel tel que WAMP, MAMP ou LAMP qui regroupe l’ensemble de ces éléments.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Qu’est-ce qu’un algorithme ?",
+                    reponse: "<strong>Un algorithme est une suite finie et non ambiguë d’opérations ou d'instructions permettant de résoudre un problème ou d'obtenir un résultat.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Qu’est-ce qu’une variable ? Par quel symbole est préfixée une variable en PHP ?",
+                    reponse: "<strong>Une variable est un espace mémoire permettant de stocker une valeur. En PHP, une variable est préfixée par le symbole $.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Qu’est-ce que la portée d’une variable ?",
+                    reponse: "<strong>La portée d’une variable est l’espace dans lequel celle-ci est accessible. En PHP, il existe 3 types de portée : globale, locale et statique.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Qu’est-ce qu’une superglobale, combien en existent-ils et donner un exemple d’utilisation",
+                    reponse: "<strong>Une superglobale est une variable prédéfinie du langage PHP. Il en existe 9 : $_SERVER, $_GET, $_POST, $_FILES, $_COOKIE, $_SESSION, $_REQUEST, $_ENV et $GLOBALS.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Quels sont les différents types (primitifs que l’on peut associer à une variable en PHP ? Les citer et en donner des exemples (ne pas oublier le type d’une variable sans valeur",
+                    reponse: "<strong>Il existe 8 types primitifs en PHP : boolean, integer, float, string, array, object, resource et NULL.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?",
+                    reponse: "<strong>Il existe 2 types de tableaux en PHP : les tableaux indexés et les tableaux associatifs.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles",
+                    reponse: "<strong>Il existe 3 structures de contrôles en algorithmie : la structure conditionnelle, la structure itérative et la structure séquentielle.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Quelle est la fonction PHP permettant de demander la longueur d’une chaîne de caractères ?",
+                    reponse: "<strong>La fonction PHP strlen() permet de demander la longueur d’une chaîne de caractères.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP",
+                    reponse: "<strong>Une session est un espace de stockage temporaire permettant de stocker des informations sur le serveur. La fonction PHP session_start() permet de démarrer une session en PHP.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP",
+                    reponse: "<strong>Un cookie est un petit fichier texte stocké sur le poste client. Il permet de stocker des informations sur le poste client. En PHP, il est possible de créer un cookie grâce à la fonction setcookie().</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Quelle est la différence entre les instructions « require » et « include » en PHP",
+                    reponse: "<strong>Les instructions « require » et « include » permettent d’inclure un fichier dans un autre fichier. La différence entre ces 2 instructions est que l’instruction « require » génère une erreur fatale si le fichier n’est pas trouvé alors que l’instruction « include » génère une erreur de type warning.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Comment effectuer une redirection en PHP ?",
+                    reponse: "<strong>Il est possible d’effectuer une redirection en PHP grâce à la fonction header().</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Définir la partie « front-end » et « back-end » d’une application",
+                    reponse: "<strong>La partie « front-end » d’une application est la partie visible par l’utilisateur. La partie « back-end » d’une application est la partie invisible par l’utilisateur.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Définir le contrôle de version ? Qu’est-ce que Git ?",
+                    reponse: "<strong>Le contrôle de version est un système permettant de gérer les différentes versions d’un projet. Git est un logiciel de contrôle de version.</strong>",
+                },
+                {
+                    question:"<strong>Question Générale</strong><br><br>Qu’est-ce qu’un CMS ? Citer au moins 2 exemples",
+                    reponse: "<strong>Un CMS est un logiciel permettant de créer et gérer un site web. Il existe plusieurs CMS : WordPress, Drupal, Joomla, Prestashop, Magento, etc.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Définir HTML",
+                    reponse: "<strong>HTML signifie HyperText Markup Language. C’est un langage de balisage permettant de structurer une page web.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Définir CSS",
+                    reponse: "<strong>CSS signifie Cascading Style Sheets. C’est un langage permettant de mettre en forme une page web.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Définir Javascript",
+                    reponse: "<strong>Javascript est un langage de programmation permettant de rendre une page web dynamique.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Définir JSON. Dans quel contexte ce format est-il utilisé ?",
+                    reponse: "<strong>JSON signifie JavaScript Object Notation. C’est un format de données textuelles permettant de stocker des données structurées. Il est utilisé dans le contexte des API.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Peut-on interpréter du Javascript côté serveur ? Si oui, comment ?",
+                    reponse: "<strong>Oui, il est possible d’interpréter du Javascript côté serveur grâce à Node.js.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Qu’est-ce qu’un sélecteur CSS ?",
+                    reponse: "<strong>Un sélecteur CSS permet de sélectionner un ou plusieurs éléments HTML afin de leur appliquer des styles.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Quelle balise HTML permet de créer un lien hypertexte ?",
+                    reponse: "<strong>La balise HTML <a> permet de créer un lien hypertexte.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Qu’est-ce qu’une requête AJAX ?",
+                    reponse: "<strong>Une requête AJAX est une requête asynchrone permettant de communiquer avec un serveur.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Quel sélecteur CSS permet de sélectionner tous les éléments d’une classe spécifique ? D’un identifiant spécifique ?",
+                    reponse: "<strong>Le sélecteur CSS . permet de sélectionner tous les éléments d’une classe spécifique. Le sélecteur CSS # permet de sélectionner tous les éléments d’un identifiant spécifique.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Définir le responsive design",
+                    reponse: "<strong>Le responsive design est une technique permettant d’adapter l’affichage d’un site web en fonction de la taille de l’écran.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Qu’est-ce que le templating ?",
+                    reponse: "<strong>Le templating est une technique permettant de séparer la structure d’une page web de son contenu.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Qu’est-ce qu’une fonction anonyme en Javascript ?",
+                    reponse: "<strong>Une fonction anonyme est une fonction qui n’a pas de nom.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?",
+                    reponse: "<strong>La méthode JavaScript push() est utilisée pour ajouter un élément à la fin d'un tableau.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Qu’est-ce qu’un « media query » ?",
+                    reponse: "<strong>Un « media query » est une requête permettant de définir des règles CSS en fonction de la taille de l’écran.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Qu’est-ce qu’un pseudo élément en CSS ?",
+                    reponse: "<strong>Un pseudo élément est un élément qui n’existe pas dans le DOM. Il permet de sélectionner une partie d’un élément HTML.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Qu’est-ce que Bootstrap ? Donner d’autres exemples équivalent",
+                    reponse: "<strong>Bootstrap est un framework CSS permettant de créer des sites web responsive. Il existe d’autres frameworks CSS tels que Foundation, Bulma, Materialize, etc.</strong>",
+                },
+                {
+                    question:"<strong>Question Front End</strong><br><br>Quand un formulaire HTML est créé, quelles sont les 2 méthodes qui peuvent lui être associées ? Donner la différence entre ces 2 méthodes",
+                    reponse: "<strong>Quand un formulaire HTML est créé, il est possible de lui associer 2 méthodes : GET et POST. La méthode GET permet de transmettre les données dans l’URL alors que la méthode POST permet de transmettre les données dans le corps de la requête.</strong>",
+                },
+                {
+                    question:"<strong>Question UX / UI</strong><br><br>Quelle est la différence entre UX Design et UI Design ?",
+                    reponse: "<strong>L’UX Design est la conception de l’expérience utilisateur. L’UI Design est la conception de l’interface utilisateur.</strong>",
+                },
+                {
+                    question:"<strong>Question UX / UI</strong><br><br>Qu’est-ce qu’un wireframe ?",
+                    reponse: "<strong>Un wireframe est une représentation schématique d’une interface utilisateur.</strong>",
+                },
+                {
+                    question:"<strong>Question UX / UI</strong><br><br>Qu’est-ce qu’un prototype ?",
+                    reponse: "<strong>Un prototype est une représentation interactive d’une interface utilisateur.</strong>",
+                },
+                {
+                    question:"<strong>Question UX / UI</strong><br><br>Qu’est-ce que la hiérarchie visuelle en UI Design ?",
+                    reponse: "<strong>La hiérarchie visuelle est l’ordre dans lequel l’œil humain perçoit les éléments d’une interface utilisateur.</strong>",
+                },
+                {
+                    question:"<strong>Question UX / UI</strong><br><br>Qu’est-ce que l’accessibilité en UX Design ?",
+                    reponse: "<strong>L’accessibilité est le fait de rendre une interface utilisateur accessible à tous.</strong>",
+                },
+                {
+                    question:"<strong>Question UX / UI</strong><br><br>Qu’est-ce qu’une grille de mise en page ?",
+                    reponse: "<strong>Une grille de mise en page est une grille permettant de structurer une interface utilisateur.</strong>",
+                },
+                {
+                    question:"<strong>Question UX / UI</strong><br><br>Qu’est-ce que la notion d’affordance en UX Design ?",
+                    reponse: "<strong>L’affordance est la capacité d’un objet à suggérer son utilisation.</strong>",
+                },
+                {
+                    question:"<strong>Question UX / UI</strong><br><br>Qu’est-ce qu’un « mobile first design » ?",
+                    reponse: "<strong>Le « mobile first design » est une technique permettant de concevoir une interface utilisateur en priorisant la version mobile.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Donner une définition de la programmation orientée objet",
+                    reponse: "<strong>La programmation orientée objet est un paradigme de programmation permettant de structurer un programme en utilisant des objets et des classes.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Qu’est-ce qu’une classe ? Comment la déclare-t-on ?",
+                    reponse: "<strong>Une classe est un modèle permettant de créer des objets. En PHP, une classe est déclarée grâce au mot-clé class.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Qu’est-ce qu’un objet ?",
+                    reponse: "<strong>Un objet est une instance d’une classe.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Définir la notion de propriété / attribut / méthode",
+                    reponse: "<strong>Une propriété est une variable appartenant à une classe. Un attribut est une propriété privée. Une méthode est une fonction appartenant à une classe.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Qu’est-ce que la visibilité d’une propriété ou d’une méthode ? Citer les différents types de visibilité",
+                    reponse: "<strong>La visibilité d’une propriété ou d’une méthode est le fait de définir si celle-ci est accessible ou non en dehors de la classe. Il existe 3 types de visibilité : public, protected et private.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Quelle est la méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe ?",
+                    reponse: "<strong>La méthode spécifique utilisée pour créer un nouvel objet à partir d’une classe est le constructeur.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Qu’est-ce que l’encapsulation ?",
+                    reponse: "<strong>L’encapsulation est le fait de regrouper des données et des méthodes au sein d’une même classe.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Que signifie « étendre une classe » ? Quelle est le concept clé mis en œuvre ? Donner un exemple",
+                    reponse: "<strong>Étendre une classe signifie créer une nouvelle classe à partir d’une classe existante. Le concept clé mis en œuvre est l’héritage. Un exemple d’héritage est la classe « Animal » qui peut être étendue par la classe « Chien ».</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Définir l’opérateur de résolution de portée",
+                    reponse: "<strong>L’opérateur de résolution de portée est le symbole ::. Il permet d’accéder à une propriété ou une méthode statique.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Définir une méthode / propriété statique",
+                    reponse: "<strong>Une méthode / propriété statique est une méthode / propriété appartenant à une classe et non à un objet.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Définir le polymorphisme en POO",
+                    reponse: "<strong>Le polymorphisme est le fait de pouvoir utiliser une méthode avec le même nom mais avec des comportements différents.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Définir une méthode / classe abstraite ?",
+                    reponse: "<strong>Une méthode / classe abstraite est une méthode / classe qui ne peut pas être instanciée.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Définir le chaînage de méthodes",
+                    reponse: "<strong>Le chaînage de méthodes est le fait d’appeler plusieurs méthodes à la suite.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Qu’est-ce que la méthode __toString() ? Existe-t-il d’autres méthodes « magiques »",
+                    reponse: "<strong>La méthode __toString() est une méthode permettant de définir le comportement d’un objet lorsqu’il est converti en chaîne de caractères. Il existe d’autres méthodes « magiques » telles que __construct(), __destruct(), __call(), __callStatic(), __get(), __set(), __isset(), __unset(), __sleep(), __wakeup(), __serialize(), __unserialize(), __invoke(), __set_state(), __clone(), __debugInfo().</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Qu’est-ce qu’un « autoload » ?",
+                    reponse: "<strong>Un « autoload » est une fonction permettant de charger automatiquement une classe lorsqu’elle est instanciée.</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Comment appelle-t-on en français les « getters » et les « setters » ?",
+                    reponse: "<strong>Les « getters » sont appelés « accesseurs » et les « setters » sont appelés « mutateurs ».</strong>",
+                },
+                {
+                    question:"<strong>Question POO</strong><br><br>Qu’est-ce que la sérialisation en PHP ? POO ",
+                    reponse: "<strong>La sérialisation est le fait de convertir un objet en chaîne de caractères.</strong>",
+                },
+                {
+                    question:"<strong>Question Architecture</strong><br><br>Qu’est-ce que l’architecture client / serveur ? Grâce à quel type de requête peut-on interroger le serveur. Définir l’acronyme de ce type de requête. Si on ajoute un « S » à cet acronyme, expliquer la différence",
+                    reponse: "<strong>L’architecture client / serveur est une architecture permettant de séparer le traitement des données de l’affichage. Grâce à une requête HTTP, il est possible d’interroger le serveur. L’acronyme de ce type de requête est AJAX. Si on ajoute un « S » à cet acronyme, cela signifie que la requête est asynchrone.</strong>",
+                },
+                {
+                    question:"<strong>Question Architecture</strong><br><br>Donner la définition d’un design pattern. Citer au moins 3 exemples de design pattern",
+                    reponse: "<strong>Un design pattern est une solution à un problème récurrent. Il existe plusieurs design pattern : MVC, MVP, Factory, Singleton, etc.</strong>",
+                },
+                {
+                    question:"<strong>Question Architecture</strong><br><br>Qu’est-ce que l’architecture MVC ?",
+                    reponse: "<strong>L’architecture MVC est une architecture permettant de séparer le traitement des données de l’affichage.</strong>",
+                },
+                {
+                    question:"<strong>Question Architecture</strong><br><br>Quel est le rôle de chaque couche du design pattern MVC : Model, View, Controller ?",
+                    reponse: "<strong>Le Model est la couche permettant de gérer les données. La View est la couche permettant de gérer l’affichage. Le Controller est la couche permettant de gérer les actions de l’utilisateur.</strong>",
+                },
+                {
+                    question:"<strong>Question Architecture</strong><br><br>Quels sont les avantages de l’architecture MVC ?",
+                    reponse: "<strong>Les avantages de l’architecture MVC sont : la séparation des données et de l’affichage, la réutilisation du code, la facilité de maintenance, etc.</strong>",
+                },
+                {
+                    question:"<strong>Question Architecture</strong><br><br>Existe-t-il des variantes à l’architecture MVC ?",
+                    reponse: "<strong>Oui, il existe plusieurs variantes à l’architecture MVC : MVP, MVVM, etc.</strong>",
+                },
+                {
+                    question:"<strong>Question Architecture</strong><br><br>Qu’est-ce qu’une API ? Définir l’architecture REST",
+                    reponse: "<strong>Une API est un ensemble de fonctions permettant de communiquer avec un serveur. L’architecture REST est une architecture permettant de créer des API.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Qu’est-ce que la modélisation de données ? Définir la méthode Merise",
+                    reponse: "<strong>La modélisation de données est une technique permettant de représenter les données d’un système d’information. La méthode Merise est une méthode permettant de modéliser les données d’un système d’information.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les 3 étapes principales de la méthode Merise ? a. Analyse, conception et réalisation ",
+                    reponse: "<strong>Quelles sont les 3 étapes principales de la méthode Merise ? a. Analyse, conception et réalisation </strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les 3 étapes principales de la méthode Merise ? b. Planification, exécution et contrôle qu’un modèle logique de données (MLD) en Merise ?",
+                    reponse: "<strong>Quelles sont les 3 étapes principales de la méthode Merise ? b. Planification, exécution et contrôle qu’un modèle logique de données (MLD) en Merise ?</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les 3 étapes principales de la méthode Merise ? c. Création, modification et suppression",
+                    reponse: "<strong>Quelles sont les 3 étapes principales de la méthode Merise ? c. Création, modification et suppression</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?",
+                    reponse: "<strong>Un modèle conceptuel de données est un modèle permettant de représenter les données d’un système d’information. En Merise, il est représenté sous forme de schéma entité-association.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?",
+                    reponse: "<strong>Un modèle logique de données est un modèle permettant de représenter les données d’un système d’information. En Merise, il est représenté sous forme de schéma relationnel.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants :  qu’un modèle logique de données (MLD) en Merise ?   ",
+                    reponse: "<strong>Donner la définition des mots suivants :  qu’un modèle logique de données (MLD) en Merise ?   </strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’un modèle conceptuel de données (MCD) en Merise ?",
+                    reponse: "<strong>Donner la définition des mots suivants : qu’un modèle conceptuel de données (MCD) en Merise ?</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une Relation en Merise ? ",
+                    reponse: "<strong>Donner la définition des mots suivants : qu’une Relation en Merise ? </strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une Entité  en Merise ? ",
+                    reponse: "<strong>Donner la définition des mots suivants : qu’une Entité  en Merise ? </strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une clé étrangère en merise",
+                    reponse: "<strong>Donner la définition des mots suivants : qu’une clé étrangère en merise</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une Cardinalité en merise ",
+                    reponse: "<strong>Donner la définition des mots suivants : qu’une Cardinalité en merise </strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Donner la définition des mots suivants : qu’une clé étrangère en merise",
+                    reponse: "<strong>Donner la définition des mots suivants : qu’une clé étrangère en merise</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Que devient une relation de type « Many To Many » dans le modèle logique de données ?",
+                    reponse: "<strong>Une relation de type « Many To Many » devient une table de jointure dans le modèle logique de données.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Qu’est-ce qu’une base de données ?",
+                    reponse: "<strong>Une base de données est un ensemble de données organisées et structurées.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Définir les notions suivantes : a. SQL b. MySQL c. SGBD (donner 2 exemples de SGBD)",
+                    reponse: "<strong>Définir les notions suivantes : a. SQL b. MySQL c. SGBD (donner 2 exemples de SGBD)</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Définir les notions suivantes :  b. MySQL (donner 2 exemples de SGBD)",
+                    reponse: "<strong>Définir les notions suivantes :  b. MySQL (donner 2 exemples de SGBD)</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Définir les notions suivantes :  c. SGBD (donner 2 exemples de SGBD)",
+                    reponse: "<strong>Définir les notions suivantes :  c. SGBD (donner 2 exemples de SGBD)</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Dans une base de données, les données sont stockées dans des ___. Celles-ci sont constituées de lignes appelées ___ et de colonnes appelées ___",
+                    reponse: "<strong>Dans une base de données, les données sont stockées dans des tables. Celles-ci sont constituées de lignes appelées enregistrements et de colonnes appelées champs.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelle est la différence entre une base de données relationnelle et non relationnelle ?",
+                    reponse: "<strong>Une base de données relationnelle est une base de données stockant les données dans des tables. Une base de données non relationnelle est une base de données stockant les données sous forme de documents.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Qu’est-ce qu’une jointure dans une base de données ? En existe-t-il plusieurs ? Si oui lesquelles ?",
+                    reponse: "<strong>Une jointure est une opération permettant de lier plusieurs tables entre elles. Il existe plusieurs types de jointures : INNER JOIN, LEFT JOIN, RIGHT JOIN et FULL JOIN.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>A quoi sert une vue dans une base de données ?",
+                    reponse: "<strong>Une vue est une table virtuelle permettant de sélectionner des données d’une ou plusieurs tables.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Qu’est-ce que l’intégrité référentielle dans une base de données ?",
+                    reponse: "<strong>L’intégrité référentielle est le fait de garantir la cohérence des données entre plusieurs tables.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les fonctions d’agrégation en SQL ?",
+                    reponse: "<strong>Les fonctions d’agrégation en SQL sont : COUNT(), SUM(), AVG(), MIN() et MAX().</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Qu’est ce qu’un CRUD dans le contexte d’une base de données ?",
+                    reponse: "<strong>Un CRUD est un ensemble d’opérations permettant de gérer les données d’une base de données. CRUD signifie Create, Read, Update et Delete.</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Insérer un nouvel enregistrement dans une table ",
+                    reponse: "<strong>Quelles sont les clauses qui permettent de Insérer un nouvel enregistrement dans une table </strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Modifier un enregistrement dans une table ",
+                    reponse: "<strong>Quelles sont les clauses qui permettent de Modifier un enregistrement dans une table </strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Supprimer un enregistrement dans une table ",
+                    reponse: "<strong>Quelles sont les clauses qui permettent de Supprimer un enregistrement dans une table </strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Supprimer la base de données",
+                    reponse: "<strong>Quelles sont les clauses qui permettent de Supprimer la base de données</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Filtrer les résultats d’une requête SQL ",
+                    reponse: "<strong>Quelles sont les clauses qui permettent de Filtrer les résultats d’une requête SQL </strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Trier les résultats d’une requête SELECT",
+                    reponse: "<strong>Quelles sont les clauses qui permettent de Trier les résultats d’une requête SELECT</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique",
+                    reponse: "<strong>Quelles sont les clauses qui permettent de Regrouper les résultats d'une requête SELECT en fonction d'une colonne spécifique</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Quelles sont les clauses qui permettent de Concaténer 2 chaînes de caractères",
+                    reponse: "<strong>Quelles sont les clauses qui permettent de Concaténer 2 chaînes de caractères</strong>",
+                },
+                {
+                    question:"<strong>Question Modelisation & BDD</strong><br><br>Comment,se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?",
+                    reponse: "<strong>Comment,se connecter à une base de données en PHP ? Quelle est la classe native utilisée ?</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br>Qu’est-ce que Symfony ?",
+                    reponse: "<strong>Symfony est un framework PHP permettant de créer des applications web.</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br>Sur quel langage de programmation et design pattern repose Symfony ?",
+                    reponse: "<strong>Symfony repose sur le langage de programmation PHP et le design pattern MVC.</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br>Quelle est la dernière version en date de Symfony ?",
+                    reponse: "<strong>La dernière version en date de Symfony est la version 5.2.</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br>Qu’est-ce qu’un bundle ?",
+                    reponse: "<strong>Un bundle est un ensemble de fichiers et de répertoires permettant d’ajouter des fonctionnalités à un projet Symfony.</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br>Quel est le moteur de template utilisé par défaut dans Symfony ?",
+                    reponse: "<strong>Le moteur de template utilisé par défaut dans Symfony est Twig.</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br>Qu’est-ce qu’un ORM ? Quel est son utilité et comment s’appelle-t-il au sein de Symfony ?",
+                    reponse: "<strong>Un ORM est un outil permettant de manipuler des données de la base de données. Son utilité est de faciliter la manipulation des données. Au sein de Symfony, l’ORM s’appelle Doctrine.</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br>Qu’est-ce que l’injection de dépendances ? Quel est l’outil utilisé dans ce contexte et quel fichier contient l’intégralité des dépendances du projet ?",
+                    reponse: "<strong>L’injection de dépendances est un design pattern permettant de gérer les dépendances entre les classes. Au sein de Symfony, l’outil utilisé est le conteneur de services. Le fichier contenant l’intégralité des dépendances du projet est le fichier services.yaml.</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br>Que permet le bundle Maker au sein de Symfony ?",
+                    reponse: "<strong>Le bundle Maker permet de générer du code.</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br>Quel est le langage de requêtage exploité au sein d’un projet Symfony ?",
+                    reponse: "<strong>Le langage de requêtage exploité au sein d’un projet Symfony est le DQL.</strong>",
+                },
+                {
+                    question:"<strong>Question Symfony</strong><br><br> Quel est le composant qui garantit l’authentification et l’autorisation des utilisateurs ?",
+                    reponse: "<strong>Le composant qui garantit l’authentification et l’autorisation des utilisateurs est le composant Security.</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>Qu’est-ce que l’injection SQL ? Comment s’en prémunir ?",
+                    reponse: "<strong>L’injection SQL est une faille de sécurité permettant d’injecter du code SQL dans une requête SQL. Pour s’en prémunir, il faut utiliser des requêtes préparées.</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>Qu’est-ce que la faille XSS ? Comment s’en prémunir ?",
+                    reponse: "<strong>La faille XSS est une faille de sécurité permettant d’injecter du code JavaScript dans une page web. Pour s’en prémunir, il faut utiliser la fonction htmlspecialchars().</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>Qu’est-ce que la faille CSRF ? Comment s’en prémunir ?",
+                    reponse: "<strong>La faille CSRF est une faille de sécurité permettant d’envoyer des requêtes HTTP à l’insu de l’utilisateur. Pour s’en prémunir, il faut utiliser des jetons CSRF.</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>Définir l’attaque par force brute et l’attaque par dictionnaire",
+                    reponse: "<strong>L’attaque par force brute est une attaque consistant à tester toutes les combinaisons possibles. L’attaque par dictionnaire est une attaque consistant à tester toutes les combinaisons possibles en se basant sur un dictionnaire.</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>Existe-t-il d’autres failles de sécurité ? Citer celles-ci et expliquer simplement leur comportement",
+                    reponse: "<strong>Oui, il existe d’autres failles de sécurité telles que l’attaque par force brute, l’attaque par dictionnaire, l’attaque par déni de service, l’attaque par déni de service distribué, l’attaque par phishing, etc.</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>A quoi servent l’authentification et l’autorisation dans un contexte d’application web ?",
+                    reponse: "<strong>L’authentification et l’autorisation servent à sécuriser l’accès à une application web.</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>Définir la notion de hachage d’un mot de passe et citer des algorithmes de hachage",
+                    reponse: "<strong>Le hachage d’un mot de passe est le fait de transformer un mot de passe en une chaîne de caractères aléatoire. Les algorithmes de hachage sont : MD5, SHA1, SHA256, SHA512, etc.</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>Qu’est-ce qu’une politique de mots de passe forts ?",
+                    reponse: "<strong>Une politique de mots de passe forts est une politique permettant de définir des règles pour les mots de passe.</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>Qu’est-ce que l’hameçonnage ?",
+                    reponse: "<strong>L’hameçonnage est une technique permettant de récupérer des informations personnelles en se faisant passer pour une personne ou une entreprise de confiance.</strong>",
+                },
+                {
+                    question:"<strong>Question Sécurité</strong><br><br>Définir la « validation des entrées »",
+                    reponse: "<strong>La « validation des entrées » est le fait de vérifier les données saisies par l’utilisateur.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>Qu’est-ce que le RGPD ?",
+                    reponse: "<strong>Le RGPD est le Règlement Général sur la Protection des Données.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>Quel est son objectif principal ?",
+                    reponse: "<strong>L’objectif principal du RGPD est de protéger les données personnelles des utilisateurs.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>Quelle est la date d’entrée en vigueur du RGPD ?",
+                    reponse: "<strong>Le RGPD est entré en vigueur le 25 mai 2018.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>Quelles sont les sanctions possibles en cas de non-respect du RGPD ?",
+                    reponse: "<strong>Les sanctions possibles en cas de non-respect du RGPD sont : un avertissement, une mise en demeure, une limitation temporaire ou définitive du traitement, une suspension des flux de données, une amende administrative pouvant aller jusqu’à 20 millions d’euros ou 4% du chiffre d’affaires annuel mondial.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>En France, quel est l’autorité administrative qui s’occupe de faire appliquer le RGPD ?",
+                    reponse: "<strong>En France, l’autorité administrative qui s’occupe de faire appliquer le RGPD est la CNIL.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>Quel est le consentement valide selon le RPGD ?",
+                    reponse: "<strong>Le consentement valide selon le RGPD est un consentement libre, éclairé, spécifique et univoque.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>Qu’est-ce qu’une politique de confidentialité ?",
+                    reponse: "<strong>Une politique de confidentialité est un document permettant d’informer les utilisateurs sur la manière dont sont traitées leurs données personnelles.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>Quelle est la durée de conservation maximale des données personnelles selon le RGPD ?",
+                    reponse: "<strong>La durée de conservation maximale des données personnelles selon le RGPD est de 3 ans.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>Quels sont les droits des utilisateurs selon le RGPD ?",
+                    reponse: "<strong>Les droits des utilisateurs selon le RGPD sont : le droit à l’information, le droit d’accès, le droit de rectification, le droit à l’effacement, le droit à la limitation du traitement, le droit à la portabilité des données, le droit d’opposition, le droit de ne pas faire l’objet d’une décision individuelle automatisée, le droit de retirer son consentement à tout moment.</strong>",
+                },
+                {
+                    question:"<strong>Question RGPD</strong><br><br>Qu’est-ce que le principe de minimisation des données selon le RGPD ?",
+                    reponse: "<strong>Le principe de minimisation des données selon le RGPD est le fait de collecter uniquement les données nécessaires au traitement.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Qu’est-ce que le SEO ?",
+                    reponse: "<strong>Le SEO est l’acronyme de Search Engine Optimization. Il s’agit d’un ensemble de techniques permettant d’améliorer le positionnement d’un site web dans les résultats des moteurs de recherche.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Quel est l’objectif principal du SEO ?",
+                    reponse: "<strong>L’objectif principal du SEO est d’augmenter le trafic d’un site web.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Existe-t-il plusieurs types de référencement ? Lesquels ?",
+                    reponse: "<strong>Oui, il existe plusieurs types de référencement : le référencement naturel (SEO), le référencement payant (SEA), le référencement social (SMO), le référencement vidéo (VSEO), le référencement local (Local SEO), etc.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Qu’est-ce que la densité de mots-clés en SEO ?",
+                    reponse: "<strong>La densité de mots-clés en SEO est le rapport entre le nombre de mots-clés et le nombre total de mots.</strong>",
+                }, 
+                {
+                    question:"<strong>Question SEO</strong><br><br>Qu’est-ce qu’une balise « alt » ?",
+                    reponse: "<strong>Une balise « alt » est une balise permettant de décrire une image.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Qu’est-ce que la balise « meta description » ?",
+                    reponse: "<strong>La balise « meta description » est une balise permettant de décrire le contenu d’une page web.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Qu’est-ce que le « nofollow » en SEO ?",
+                    reponse: "<strong>Le « nofollow » est une balise permettant d’indiquer aux moteurs de recherche de ne pas suivre un lien.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Quelle est l'importance du contenu de qualité pour le référencement d'un site web ?",
+                    reponse: "<strong>Le contenu de qualité est très important pour le référencement d'un site web car il permet d'augmenter le trafic d'un site web.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Pourquoi est-il important d'utiliser des balises de titre (h1, h2, h3, etc.) de manière structurée ?",
+                    reponse: "<strong>Il est important d'utiliser des balises de titre (h1, h2, h3, etc.) de manière structurée car cela permet d'améliorer le référencement d'un site web.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Quelle est la recommandation pour les URL d'un site web bien référencé ?",
+                    reponse: "<strong>La recommandation pour les URL d'un site web bien référencé est d'utiliser des URL courtes et des URL contenant des mots-clés.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Qu'est-ce que le maillage interne et pourquoi est-il important pour le référencement ?",
+                    reponse: "<strong>Le maillage interne est un ensemble de liens internes permettant de relier les différentes pages d'un site web. Il est important pour le référencement car il permet d'améliorer le positionnement d'un site web dans les résultats des moteurs de recherche.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Qu'est-ce que l'optimisation des images pour le référencement ?",
+                    reponse: "<strong>L'optimisation des images pour le référencement est une technique permettant d'améliorer le positionnement d'un site web dans les résultats des moteurs de recherche.</strong>",
+                },
+                {
+                    question:"<strong>Question SEO</strong><br><br>Qu'est-ce qu'un plan de site (sitemap) et pourquoi est-il important pour le référencement ? ",
+                    reponse: "<strong>Un plan de site (sitemap) est un fichier permettant d'indiquer aux moteurs de recherche les pages d'un site web. Il est important pour le référencement car il permet d'améliorer le positionnement d'un site web dans les résultats des moteurs de recherche.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu’est-ce que la gestion de projet ?",
+                    reponse: "<strong>La gestion de projet est l’ensemble des activités visant à organiser le bon déroulement d’un projet.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu’est-ce qu’une méthode Agile de gestion de projet ?",
+                    reponse: "<strong>Une méthode Agile de gestion de projet est une méthode permettant de gérer un projet de manière itérative et incrémentale.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Expliquer la méthode MoSCoW en quelques lignes et citer ses avantages",
+                    reponse: "<strong>La méthode MoSCoW est une méthode permettant de prioriser les tâches d’un projet. Ses avantages sont : la simplicité, la rapidité et l’efficacité.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>A quoi sert la méthodologie MVP ? Citer les caractéristiques clés",
+                    reponse: "<strong>La méthodologie MVP sert à valider une idée de produit. Ses caractéristiques clés sont : la simplicité, la rapidité et l’efficacité.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu’est-ce que la planification itérative ?",
+                    reponse: "<strong>La planification itérative est une planification permettant de planifier un projet de manière itérative.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Citer 3 méthodes Agiles dans le cadre d’un projet informatique",
+                    reponse: "<strong>3 méthodes Agiles dans le cadre d’un projet informatique sont : SCRUM, Kanban et XP.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu’est-ce qu’une réunion de revue de projet ?",
+                    reponse: "<strong>Une réunion de revue de projet est une réunion permettant de faire le point sur l’avancement d’un projet.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu’est-ce qu’un livrable dans un projet ?",
+                    reponse: "<strong>Un livrable dans un projet est un élément livré à la fin d’une phase du projet.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Quels sont les 3 piliers SCRUM ? Définir chacun d’entre eux",
+                    reponse: "<strong>Les 3 piliers SCRUM sont : la transparence, l’inspection et l’adaptation.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu’est-ce que le DevOps et quel est son objectif principal ?",
+                    reponse: "<strong>Le DevOps est une méthode permettant de rapprocher les équipes de développement et d’exploitation. Son objectif principal est d’améliorer la qualité des logiciels.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu’est-ce que l’intégration continue ?",
+                    reponse: "<strong>L’intégration continue est une pratique permettant de tester et de valider le code à chaque modification.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu’est-ce que Docker ? Et en quoi est-il utile dans le cadre du DevOps ?",
+                    reponse: "<strong>Docker est un outil permettant de créer des conteneurs. Il est utile dans le cadre du DevOps car il permet de faciliter le déploiement d’une application.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu’est-ce qu’un test unitaire ?",
+                    reponse: "<strong>Un test unitaire est un test permettant de tester une unité de code.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Quelle est l'unité de code testée lors d'un test unitaire ?",
+                    reponse: "<strong>L'unité de code testée lors d'un test unitaire est une fonction.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Quelles sont les caractéristiques d'un bon test unitaire ?",
+                    reponse: "<strong>Les caractéristiques d'un bon test unitaire sont : l'indépendance, la rapidité, la reproductibilité et l'auto-validation.</strong>",
+                },
+                {
+                    question:"<strong>Question Gestion de projet</strong><br><br>Qu'est-ce qu'une assertion dans un test unitaire ?",
+                    reponse: "<strong>Une assertion dans un test unitaire est une instruction permettant de vérifier le résultat d'un test.</strong>",
+                }
+            ];
+            var qR = questionsEtReponses[Math.floor(Math.random() * questionsEtReponses.length)];
+            document.getElementById("question").innerHTML = qR.question;
+            document.getElementById("reponse").innerHTML = qR.reponse;
+            document.getElementById("reponse").style.display = "block"; 
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btnGenerator" onclick="genererQuestion()">Générer une Question</button>
+        <p class="question" id="question"></p>
+        <p class="reponse" id="reponse" style="display:none;"></p>
+    </div>
+</body>
+
+</html>
